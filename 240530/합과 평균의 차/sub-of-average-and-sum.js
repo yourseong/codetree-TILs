@@ -6,7 +6,7 @@ let b = Number(input[1]);
 let c = Number(input[2]);
 
 let sum = a + b + c;
-let average = (a + b + c) / 3;
+let average = (a + b + c) / 3; //sum / 3 이렇게 작성하는게 더 좋아보임
 let substraction = sum - average;
 
 console.log(sum);
