@@ -7,4 +7,4 @@ let b = Number(input[1]);
 let sum = a + b;
 let average = (a + b) / 2;
 
-console.log(sum, average);
+console.log(sum, average.toFixed(1));
