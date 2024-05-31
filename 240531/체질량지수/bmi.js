@@ -8,6 +8,6 @@ let b = (w/((h/100)**2));
 
 console.log(parseInt(b));
 
-if (b > 25) {
+if (b >= 25) { //이상이므로 >=
     console.log("Obesity");
 }
