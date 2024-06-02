@@ -7,5 +7,5 @@ let b = Number(input[1]);
 if (a > b) {
     console.log(a * b);
 } else {
-    console.log(parseInt(a / b));
+    console.log(parseInt(b / a));
 }
