@@ -5,7 +5,7 @@ let money = Number(input);
 
 if (money >= 3000) {
     console.log("book");
-} else if (n >= 1000) {
+} else if (money >= 1000) {
     console.log("mask");
 } else {
     console.log("no");
