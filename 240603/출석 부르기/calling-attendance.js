@@ -7,6 +7,8 @@ if (n == 1) {
     console.log("John");
 } else if (n == 2) {
     console.log("Tom");
-} else {
+} else if (n == 3) {
     console.log("Paul");
+} else {
+    console.log("Vacancy")
 }
