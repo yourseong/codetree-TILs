@@ -1,7 +1,7 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim();
 
-let a = Number(input[0]);
+let a = Number(input);
 
 if (a >= 10 && a <= 20) {
     console.log("yes");
