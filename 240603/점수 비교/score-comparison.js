@@ -9,7 +9,7 @@ let A_eng = Number(line1[0]);
 let B_math = Number(line2[0]);
 let B_eng = Number(line2[1]);
 
-if (A_math > B_math && A_eng > B_eng) {
+if (A_math >= B_math && A_eng >= B_eng) {
     console.log(1); 
 } else {
     console.log(0);
