@@ -39,3 +39,13 @@ if (a != b) {
 } else {
     console.log(0);
 }
+
+//이렇게 해도 되지만
+
+//이렇게 하는게 더 좋을수도 있음
+// console.log(a >= b ? 1 : 0);
+// console.log(a > b ? 1 : 0);
+// console.log(a <= b ? 1 : 0);
+// console.log(a < b ? 1 : 0);
+// console.log(a == b ? 1 : 0);
+// console.log(a != b ? 1 : 0);
