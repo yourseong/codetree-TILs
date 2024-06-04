@@ -5,7 +5,7 @@ let a = Number(input[0]);
 let b = Number(input[1]);
 let c = Number(input[2]);
 
-if (a < b && a < c) {
+if (a <= b && a <= c) {
     process.stdout.write("1 ")
 } else {
     process.stdout.write("0 ");
