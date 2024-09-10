@@ -1,5 +1,5 @@
 const fs = require("fs");
-let m = fs.readFileSync(0).toString().trim();
+let m = fs.readFileSync(0).toString();
 
 if (3 <= m && m <= 5) {
     console.log("Spring");
