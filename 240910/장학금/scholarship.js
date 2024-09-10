@@ -7,7 +7,7 @@ let final = Number(score[1]);
 if (midterm >= 90) {
     if (final >= 95) {
         console.log(100000)
-    } else if (final > 90) {
+    } else if (final >= 90) {
         console.log(50000)
     } 
 } else {
