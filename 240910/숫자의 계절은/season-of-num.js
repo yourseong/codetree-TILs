@@ -9,6 +9,6 @@ if (3 <= m && m <= 5) {
 else if (9 <= m && m <= 11){
     console.log("Fall");
 }
-else if (m === 12 || m <= 2) {
+else if (m === 12 && m <= 2) {
     console.log("Winter");
 }
