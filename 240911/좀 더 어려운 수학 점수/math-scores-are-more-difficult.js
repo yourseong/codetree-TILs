@@ -6,7 +6,7 @@ let A_grade = input[0].split(" ");
 let A_Math = Number(A_grade[0]);
 let A_English = Number(A_grade[1]);
 
-let B_grade = Number(input[1].split(" "));
+let B_grade = input[1].split(" ");
 let B_Math = Number(B_grade[0]);
 let B_English = Number(B_grade[1]);
 
