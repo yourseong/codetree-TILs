@@ -27,4 +27,6 @@ if ((p1_temp > 36 && p2_temp > 36) || (p2_temp > 36 && p3_temp > 36) || (p1_temp
     else {
         console.log("N");
     }
+} else {
+    console.log("N")
 }
