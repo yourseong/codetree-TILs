@@ -28,7 +28,7 @@ if (p1_cold === "Y" || p2_cold === "Y" || p3_cold || "Y") // 증상이 있을 �
     } 
     else // 증상이 없을 때
     {
-        if (p1_temp >= 37 || p2_temp >= 37 || p3_temp >= 37 ) //증상은 없지만 37도 이상일 때
+        if ((p1_temp >= 37 && p2_temp >= 37) || (p1_temp >= 37 && p3_temp >= 37) || (p2_temp >= 37 && p3_temp >= 37)) //증상은 없지만 37도 이상일 때
        { console.log("N");}
        else {
         console.log("N");
