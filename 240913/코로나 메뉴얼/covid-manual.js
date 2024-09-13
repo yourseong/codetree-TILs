@@ -20,10 +20,13 @@ if (p1_cold === "Y" || p2_cold === "Y" || p3_cold || "Y") // 증상이 있을 �
         if ((p1_temp >= 37 && p2_temp >= 37) || (p1_temp >= 37 && p3_temp >= 37) || (p2_temp >= 37 && p3_temp >= 37)) //위급상황일때 (A로 가는 사람이 2명 이상인 경우)
         {
             console.log("E");
-        }
-       
+        } 
+        else if (p1_temp < 37 || p2_temp < 37 || p3_temp < 37) 
+        {
+            console.log("N"); // 증상은 있지만 체온은 정상일 때 (C)
+        }     
     } 
-    else//증상이 없을 때 
+    else // 증상이 없을 때
     {
         console.log("N");
     }
