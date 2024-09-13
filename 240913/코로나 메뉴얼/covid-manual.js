@@ -1,37 +1,30 @@
 const fs = require("fs");
-const input = fs.readFileSync(0).toString().trim();
+const input = fs.readFileSync(0).toString().trim().split("\n");
 
-const person = input.split("\n");
-const p1 = person[0].split(" ");
-const p2 = person[1].split(" ");
-const p3 = person[2].split(" ");
+const p1 = input[0].split(" "); //p1[0] == 증상, p1[1] == 체온
+const p2 = input[1].split(" ");
+const p3 = input[2].split(" ");
 
-const p1_cold = p1[0];
-const p1_temp = Number(p1[1]);
+const p1_symp = p1[0]; // p1 증상
+const p1_temp = Number(p1[1])// p1 체온
 
-const p2_cold = p2[0];
-const p2_temp = Number(p2[1]);
+const p2_symp = p2[0]; //
+const p2_temp = Number(p2[1])// 
 
-const p3_cold = p3[0];
-const p3_temp = Number(p3[1]);
+const p3_symp = p3[0]; // p1 증상
+const p3_temp = Number(p3[1])// p1 체온
 
-if (p1_cold === "Y" || p2_cold === "Y" || p3_cold || "Y") // 증상이 있을 때
-    { 
-        if ((p1_temp >= 37 && p2_temp >= 37) || (p1_temp >= 37 && p3_temp >= 37) || (p2_temp >= 37 && p3_temp >= 37)) //위급상황일때 (A로 가는 사람이 2명 이상인 경우)
-        {
-            console.log("E");
-        } 
-        else if (p1_temp < 37 || p2_temp < 37 || p3_temp < 37) 
-        {
-            console.log("N"); // 증상은 있지만 체온은 정상일 때 (C)
-        }     
-    } 
+// console.log(p1_symp, p1_temp, p2_symp, p2_temp, p3_symp, p3_temp)
 
-    else if (p1_cold === "N" || p2_cold === "N" || p3_cold || "N")// 증상이 없을 때
+// 두 명 이상 체온이 37도 이상일 때
+if ((p1_temp > 36 && p2_temp > 36) || (p2_temp > 36 && p3_temp > 36) || (p1_temp > 36 && p3_temp > 36)) 
+{ 
+    // 두 명 이상 증상이 있다면 E
+    if ((p1_symp === "Y" && p2_symp === "Y") || (p2_symp === "Y" && p3_symp === "Y") || (p1_symp === "Y" && p3_symp === "Y"))
     {
-        if ((p1_temp >= 37 && p2_temp >= 37) || (p1_temp >= 37 && p3_temp >= 37) || (p2_temp >= 37 && p3_temp >= 37)) //증상은 없지만 37도 이상일 때
-       { console.log("N");}
-       else {
-        console.log("N");
-       }
+        console.log("E");
     }
+    else {
+        console.log("N");
+    }
+}
