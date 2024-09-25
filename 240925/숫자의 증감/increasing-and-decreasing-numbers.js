@@ -5,14 +5,13 @@ const c = input[0];
 const n = Number(input[1]);
 
 let result = "";
-let i, j;
 
 if (c === 'A') {
-    for (i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         result += (i + " ");
     }
 } else {
-    for (j = n; n >= 1; j--) {
+    for (let j = n; j >= 1; j--) {
         result += (j + " ");
     }
 }
