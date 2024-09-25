@@ -10,7 +10,7 @@ if (c === 'A') {
     for (let i = 1; i <= n; i++) {
         result += (i + " ");
     }
-} else if (c === 'D') {
+} else {
     for (let j = n; n >= 1; j--) {
         result += (j + " ");
     }
