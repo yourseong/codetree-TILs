@@ -7,11 +7,11 @@ const b = Number(input[1]);
 let result = "";
 
 
-for (let i = a; i <= b;) {
+for (let i = a; i <= b) {
     if (i % 2 === 1) { 
         result += (i + " ");
         i *= 2;  
-    } else {
+    } else if (i % 2 === 0) {
         result += (i + " ");
         i += 3;
     }  
