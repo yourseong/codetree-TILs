@@ -14,7 +14,7 @@ if (a <= b) {
             sumVal += a;
         }
     }
-} else {
+} else if (a >= b) {
     for (let i = b; i <= a; i++) {
         if (b % 5 === 0) {
             sumVal += b;
