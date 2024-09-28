@@ -11,13 +11,13 @@ let sumVal = 0;
 if (a <= b) {
     for (let i = a; i <= b; i++) {
         if (i % 5 === 0) {
-            sumVal += a;
+            sumVal += i;
         }
     }
 } else {
     for (let i = b; i <= a; i++) {
         if (i % 5 === 0) {
-            sumVal += b;
+            sumVal += i;
         }
     }
 }
