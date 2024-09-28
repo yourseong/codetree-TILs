@@ -9,7 +9,7 @@ const n = Number(input[0]);
 
 let sumVal = 0;
 
-for (let i = 1; i <= n; i++) {
+for (let i = 1; i < n; i++) {
     if (input[i] % 2 === 1 && input[i] % 3 === 0) {
         sumVal += input[i];
     }
