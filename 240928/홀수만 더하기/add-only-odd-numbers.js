@@ -13,9 +13,6 @@ for (let i = 1; i <= n; i++) {
     if (input[i] % 2 === 1 && input[i] % 3 === 0) {
         sumVal += input[i];
     }
-    else {
-        sumval = 0;
-    }
 }
 
-console.log(sumVal);
+console.log(sumVal+ ' ');
