@@ -8,8 +8,9 @@ while (true) {
     let cnt = 0;
     
     if (input[idx] % 2 === 0) {
-        console.log(input[idx] / 2);
         cnt++
+        console.log(input[idx] / 2);
+        
     } 
      if (cnt >= 3) {
             break;
