@@ -5,10 +5,14 @@ while (true) {
     let idx = 0;
     idx++
 
+    let cnt = 0;
     
     if (input[idx] % 2 === 0) {
         console.log(input[idx] / 2);
-        break;
+        cnt++
+    } 
+     if (cnt >= 3) {
+            break;
         }
     
 }
