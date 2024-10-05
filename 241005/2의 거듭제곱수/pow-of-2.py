@@ -1,9 +1,8 @@
 n = int(input())
-x = 0
 
 while True:
-    x = n / 2
-
-    if x == 2:
-        print(int(x))
+    n //= 2
+    if (n - 2 == 0):
         break
+    
+print(n)
