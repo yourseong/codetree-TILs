@@ -5,10 +5,6 @@ let cnt = 0;
 while (n > 1) {
     n /= 2
     cnt++
-
-    if(n - 2 === 0) 
-        break;
-    
 }
 
 
