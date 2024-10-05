@@ -1,13 +1,17 @@
 const fs = require("fs");
-const n = Number(fs.readFileSync(0).toString().trim());
-
-let x = 0;
+let n = Number(fs.readFileSync(0).toString().trim());
+let cnt = 0;
 
 while (true) {
-    x = n / 2;
+    cnt++
 
-    if (x === 2) {
-        console.log(x);
+    n /= 2;
+    
+
+    if (n === 2) {
+        cnt++
         break;
     }
 }
+
+console.log(cnt);
