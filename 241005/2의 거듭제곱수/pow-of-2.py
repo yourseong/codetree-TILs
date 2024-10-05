@@ -1,10 +1,8 @@
 n = int(input())
-cnt = 1
+cnt = 0
 
-while True:
-    n //= 2
+while n > 1:
+    n /= 2
     cnt += 1
-    if (n - 2 == 0):
-        break
-    
+
 print(cnt)
