@@ -7,5 +7,4 @@ while (n > 1) {
     cnt++
 }
 
-
-console.log(cnt + 1);
+console.log(cnt);
