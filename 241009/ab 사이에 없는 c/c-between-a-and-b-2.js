@@ -10,7 +10,7 @@ let state = true;
 // 18 59 36
 // 있으면 NO, 없으면 YES
 
-for (let i = a; i <= b; i++) {
+for (let i = 1; i <= b; i++) {
 
     if(i % c !== 0) {
         state = true;
