@@ -12,7 +12,6 @@ let state = false;
 // 기댓값 = NO
 
 for (let i = a; i <= b; i++) {
-
     if(i % c === 0) {
         state = true;
     }
