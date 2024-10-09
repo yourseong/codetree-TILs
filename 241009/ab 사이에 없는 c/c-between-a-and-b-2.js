@@ -13,13 +13,13 @@ let state = false;
 
 for (let i = a; i <= b; i++) {
 
-    if(c % i !== 0) {
+    if(i % c === 0) {
         state = true;
     }
 }
 
 if (state == true) {
-    console.log("YES");
-} else {
     console.log("NO");
+} else {
+    console.log("YES");
 }
