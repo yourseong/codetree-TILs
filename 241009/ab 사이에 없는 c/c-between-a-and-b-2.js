@@ -5,14 +5,12 @@ const a = input[0];
 const b = input[1];
 const c = input[2];
 
-let state = false;
+let state = true;
 let result = 0;
 
 for (let i = a; i <= b; i++) {
 
-    result = i % c
-
-    if(result !== 0) {
+    if(i % c !== 0) {
         state = true;
     }
 }
