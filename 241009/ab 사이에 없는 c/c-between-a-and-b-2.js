@@ -6,7 +6,6 @@ const b = input[1];
 const c = input[2];
 
 let state = true;
-let result = 0;
 
 for (let i = a; i <= b; i++) {
 
