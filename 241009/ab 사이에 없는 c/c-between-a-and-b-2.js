@@ -19,7 +19,7 @@ for (let i = a; i <= b; i++) {
 }
 
 if (state == true) {
-    console.log("NO");
-} else {
     console.log("YES");
+} else {
+    console.log("NO");
 }
