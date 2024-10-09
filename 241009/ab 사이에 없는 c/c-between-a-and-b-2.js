@@ -5,20 +5,21 @@ const a = input[0];
 const b = input[1];
 const c = input[2];
 
-let state = true;
+let state = false;
 
 // 18 59 36
 // 있으면 NO, 없으면 YES
+// 기댓값 = NO
 
-for (let i = 1; i <= b; i++) {
+for (let i = a; i <= b; i++) {
 
-    if(i % c !== 0) {
+    if(c % i !== 0) {
         state = true;
     }
 }
 
 if (state == true) {
-    console.log("YES");
-} else {
     console.log("NO");
+} else {
+    console.log("YES");
 }
