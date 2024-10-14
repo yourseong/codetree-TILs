@@ -14,9 +14,9 @@ for (let i = 0; i < n; i++) { // 5줄
 }
 
 // 나머지 4줄 출력
-for (let i = 0; i < n-1; i++) {
+for (let i = 1; i < n; i++) {
     str = "";
-    for (let j = 3; j <= n - 1 + i; j++) {
+    for (let j = 0; j <= i; j++) {
         str += "* ";
     }
     console.log(str);
