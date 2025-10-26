@@ -9,7 +9,7 @@ if (sex == 0):
         result = "BOY"
 elif (sex == 1):
     if (age >= 19):
-        result = "WONAM"
+        result = "WOMAN"
     else:
         result = "GIRL"
 
