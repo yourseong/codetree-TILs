@@ -1,4 +1,14 @@
-a, b = input().split()
+# 34 6
+'''
+0
+0
+1
+1
+0
+1
+'''
+
+a, b = map(int, (input().split()))
 
 # 같거나 큰가
 if a >= b:
