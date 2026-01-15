@@ -13,6 +13,6 @@ for i in range(len(arr)):
         break
     total += arr[i]
 
-aveg = total / (len(newarr) -1)
+aveg = total / (len(newarr))
 
 print(total, f"{aveg:.1f}")
