@@ -4,15 +4,15 @@
 # 250이 입력되면 입력을 멈춤
 
 arr = list(map(int, input().split()))
-newarr = list([])
 total = 0
+cnt = 0
 
 for i in range(len(arr)):
-    newarr.append(arr[i])
     if arr[i] >= 250:
         break
     total += arr[i]
+    cnt += 1
 
-aveg = total / (len(newarr))
+aveg = total / cnt
 
 print(total, f"{aveg:.1f}")
