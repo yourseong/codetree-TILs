@@ -5,14 +5,14 @@
 
 arr = list(map(int, input().split()))
 newarr = list([])
-sum = 0
+total = 0
 
 for i in range(len(arr)):
     newarr.append(arr[i])
     if arr[i] >= 250:
         break
-    sum += arr[i]
+    total += arr[i]
 
-aveg = sum / (len(newarr) -1)
+aveg = total / (len(newarr) -1)
 
-print(sum, aveg)
+print(total, f"{aveg:.1f}")
