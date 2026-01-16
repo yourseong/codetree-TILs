@@ -12,11 +12,11 @@ for i in range(n):
     total += grades[i]
 
 aveg = round(total / n,1)
-print(f"{aveg:.1f}")
+print(aveg)
 
-if aveg > 4.0:
+if aveg >= 4.0:
     print("Perfect")
-elif aveg > 3.0:
+elif aveg >= 3.0:
     print("Good")
 else:
     print("Poor")
