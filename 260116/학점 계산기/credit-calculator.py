@@ -11,7 +11,7 @@ total = 0
 for i in range(n):
     total += grades[i]
 
-aveg = total / n
+aveg = round(total / n,1)
 print(f"{aveg:.1f}")
 
 if aveg > 4.0:
