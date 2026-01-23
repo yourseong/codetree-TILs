@@ -10,7 +10,7 @@ cnt = 0
 cnt_list = [0] * 10 # 나머지 세는거
 mod_list = [] # 나머지들 저장
 
-while(a >= 1): # A가 1보다 작아지면 종료
+while(a >= 2): # A가 1보다 작아지면 종료
     mod = a % b
     # print(mod)
     a //= b
