@@ -4,15 +4,10 @@
 count_list = [0] * 10 # 십의자리 숫자sms 1 ~ 9까지 이므로 10까지만 필요
 arr = list(map(int, input().split())) # 입력받는 숫자들
 
-for i in range(len(arr)): # arr 순회해서
-    if arr[i] == 0:
+for elem in arr: # arr 순회해서
+    if elem == 0:
         break
-    arr[i] //= 10 # 몫만 저장
-
-# for i in range(len(arr)-1):
-#     print(arr[i], end=" ")
-
-for elem in arr:
+    elem //= 10 # 몫만 저장
     count_list[elem] += 1
 
 for i in range(1, 10):
