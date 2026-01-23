@@ -12,9 +12,9 @@ mod_list = [] # 나머지들 저장
 
 while(a >= 1): # A가 1보다 작아지면 종료
     mod = a % b
-    print(mod)
+    # print(mod)
     a //= b
-    print(a)
+    # print(a)
     mod_list.append(mod)
 
 # print(mod_list)
