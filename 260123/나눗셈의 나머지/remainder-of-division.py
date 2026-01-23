@@ -10,9 +10,9 @@ cnt = 0
 cnt_list = [0] * 10 # 나머지 세는거
 devided_list = [] # 나눈 결과들 저장
 
-while(a > 1): # A가 1보다 작아지면 종료
-    a //= b
+while(a >= 1): # A가 1보다 작아지면 종료
     mod = a % b
+    a //= b
     devided_list.append(mod)
 
 for elem in devided_list:
