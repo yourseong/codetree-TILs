@@ -5,6 +5,8 @@ count_list = [0] * 100
 arr = list(map(int, input().split()))
 
 for i in range(len(arr)):
+    if arr[i] == 0:
+        break
     arr[i] //= 10
 
 for elem in arr:
