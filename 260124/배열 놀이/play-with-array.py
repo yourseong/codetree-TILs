@@ -18,7 +18,6 @@ n, q = tuple(map(int, input().split()))
 # 그 다음 줄에 n개의 원소 값이 차례대로 공백으로 구분되어 주어짐
 n_list = list(map(int, input().split()))
 q_list = [] # query 리스트
-c_list = [] # case 리스트 (1, 2, 3)
 
 # 그 다음 줄부터 Q개의 줄에 걸쳐 Q개의 질의가 한 줄에 하나씩 주어짐
 for i in range(q): # 이 중 i번째 줄에는 i번째 질의가 문제에 주어진 것과 동일한 형식으로 주어짐
@@ -40,7 +39,3 @@ for i in range(len(q_list)): # 쿼리 리스트 순회
             print(0)
     elif q_list[i][0] == 3: # 3 s e
         print(*n_list[q_list[i][1]-1:q_list[i][2]])    # s번째 원소부터 e번째 원소까지 각 원소의 값을 공백으로 구분해 출력
-
-# 1 a - a번째 원소 출력. e.g. 1 1 
-# 2 b : 2 5
-# 3 1 2
