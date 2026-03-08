@@ -7,4 +7,15 @@
 
 nums = list(map(int, input().split()))
 
-print(nums.len)
+temp_large = nums[0]
+temp_small = nums[0]
+
+for i in range(len(nums)-1):
+    if nums[i] == 999 or nums[i] == -999:
+        break
+    if temp_large < nums[i]:
+        temp_large = nums[i]
+    elif temp_small > nums[i]:
+        temp_small = nums[i]
+
+print(temp_large, temp_small)
