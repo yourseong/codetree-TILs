@@ -24,12 +24,12 @@ if min(price) != price[n-1]:
 
     # 반복문 돌면서 최대 이익 출력
     for i in range(n): 
-        profit = buy_value - price[i]
-        if max_profit > profit:
+        profit = price[i] - buy_value # 뒤 가격에서 구매가 빼기
+        if max_profit < profit:
             max_profit = profit
         if buy_value > price[i]:
             buy_value = price[i]
-    print(abs(max_profit))
+    print(max_profit)
 
 else:
     print(0)
