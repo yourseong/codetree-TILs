@@ -19,20 +19,16 @@ buy_value = price[0] # 구매가 초기화
 profit = 0 # 현재 이익
 max_profit = 0 # 최대 이익
 
-if min(price) != price[n-1]:
+# if min(price) != price[n-1]:
     # buy_value = min(price) # !수정사항! 전체 최솟값에서 사는것이 꼭 이득이 아닐수도 있음
 
-    # 반복문 돌면서 최대 이익 출력
-    for i in range(n): 
-        profit = price[i] - buy_value # 뒤 가격에서 구매가 빼기
-        if max_profit < profit:
-            max_profit = profit
-        if buy_value > price[i]:
-            buy_value = price[i]
-    print(max_profit)
-
-else:
-    print(0)
-
+# 반복문 돌면서 최대 이익 출력
+for i in range(1, n): 
+    profit = price[i] - buy_value # 뒤 가격에서 구매가 빼기
+    if max_profit < profit:
+        max_profit = profit
+    if buy_value > price[i]:
+        buy_value = price[i]
+print(max_profit)
 
 
