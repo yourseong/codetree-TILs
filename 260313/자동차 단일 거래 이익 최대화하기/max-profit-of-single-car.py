@@ -24,7 +24,7 @@ if min(price) != price[n-1]:
     buy_value = min(price)
 
     # 반복문 돌면서 최대 이익 출력
-    for i in range(price[buy_value], n): # 이전 년도 가격이랑은 비교하면 안되므로 범위는 구매 이후부터 설정
+    for i in range(price.index(buy_value), n): # 이전 년도 가격이랑은 비교하면 안되므로 범위는 구매 이후부터 설정 (buy_value의 index부터 끝까지)
         temp = price[i] - buy_value
         profit_list.append(temp)
     print(max(profit_list))
