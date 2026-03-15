@@ -16,4 +16,4 @@ for i in range(0, a.index(max_value)+1):
     if a[i] > max_value2:
         max_value2 = a[i]
 
-print(a.index(max_value)+1, a.index(max_value2)-1)
+print(a.index(max_value)+1, a.index(max_value2))
