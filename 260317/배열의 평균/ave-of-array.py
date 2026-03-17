@@ -17,4 +17,5 @@ for j in range(4):
     vertical_aveg = (arr_2d[0][j] + arr_2d[1][j])/2
     print(vertical_aveg, end = " ")
 print("")
-print((sum(arr_2d[0]) + sum(arr_2d[1]))/8) # 전체 평균
+all_aveg = (sum(arr_2d[0]) + sum(arr_2d[1]))/8
+print("{:.1f}".format(all_aveg)) # 전체 평균
