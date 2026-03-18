@@ -20,7 +20,8 @@ num = 1
 
 # 3 2 1 0
 for j in range(n-1, -1, -1):
-    if j % 2 != 0:
+    # if j % 2 != 0: # 이렇게 쓰면 입력값이 짝수, 홀수냐에 따라 스네이크 방식이 달라짐
+    if (n-1 - j) % 2 == 0:
         for i in range(n-1, -1, -1): # 
             arr[i][j] = num
             num += 1
