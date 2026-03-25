@@ -4,7 +4,7 @@ c = input().split(" ")
 
 if (len(c[0]) > len(c[1])):
     print(c[0], len(c[0]))
-elif (len(c[0]) > len(c[1])):
+elif (len(c[0]) < len(c[1])):
     print(c[1], len(c[1]))
 else:
     print("same")
