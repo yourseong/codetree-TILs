@@ -9,7 +9,7 @@ isExists = False
 if c not in str:
     print("No")
 
-for i in range(len(str) - 1):
+for i in range(len(str)):
     if str[i] == c:
         print(i)
         break
