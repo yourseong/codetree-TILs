@@ -1,4 +1,4 @@
-str = input().lower()
+str = input()
 
 ee_exists = "No"
 ab_exists = "No"
